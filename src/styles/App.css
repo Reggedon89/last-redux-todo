@@ -1,0 +1,176 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Helveticia', 'Arial', sans-serif;
+    background: #f5f5f5;
+    color: #4d4d4d;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 100;
+    color: rgba(175, 47, 47, .15);
+    text-align: center;
+}
+
+form {
+    box-shadow: 0 5px 10px #aaa;
+    background: white;
+}
+
+.input {
+    background: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.input i {
+    cursor: pointer;
+    padding: 20px;
+}
+
+.input input {
+    flex-grow: 1;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+::placeholder {
+    font-style: italic;
+    color: #ddd;
+}
+
+.container>footer {
+    text-align: center;
+    color: #ddd;
+    margin-top: 60px;
+}
+
+.items {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.items li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.items li input {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 300;
+    border: 0;
+    outline: 0;
+}
+
+.items input[type=checkbox] {
+    display: none;
+}
+
+.items input[type=checkbox]:checked~.replace i {
+    display: inline;
+    color: green;
+}
+
+.items input[type=checkbox]:checked~input {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.items input[type=checkbox]:checked~input:focus {
+    color: #4d4d4d;
+    text-decoration: none;
+}
+
+.replace {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #d8d8d8;
+    border-radius: 50%;
+    margin: 0 15px 0 7px;
+    text-align: center;
+}
+
+.replace i {
+    display: none;
+    line-height: 34px;
+}
+
+.items li button {
+    background: transparent;
+    color: rgba(175, 47, 47, .15);
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+    display: none;
+}
+
+.items li:hover button {
+    display: inline;
+}
+
+form>footer {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 14px;
+    align-items: center;
+}
+
+form>footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form>footer p {
+    margin-left: 20px;
+    color: #d8d8d8;
+}
+
+form>footer button {
+    border: 0;
+    background: transparent;
+    color: #d8d8d8;
+    font-weight: inherit;
+    cursor: pointer;
+    height: 26px;
+}
+
+form>footer>button {
+    margin-right: 20px;
+}
+
+form>footer button.active {
+    border: 1px solid rgba(175, 47, 47, .15);
+    border-radius: 3px;
+}
+
+button {
+    outline: 0;
+}
