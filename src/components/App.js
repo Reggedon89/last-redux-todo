@@ -11,11 +11,11 @@ export default props => {
     <Provider store={store}>
       <div className="container">
         <header>
-          <h1>todos</h1>
+          <h1>Get $&!^ done!</h1>
         </header>
         <Form />
         <footer>
-          <p>Summer 2019</p>
+          <p>Geoffrey Hutson</p>
         </footer>
       </div>
     </Provider>

@@ -10,7 +10,8 @@ html {
 
 body {
     font-family: 'Helvetica Neue', 'Helveticia', 'Arial', sans-serif;
-    background: #f5f5f5;
+    background: linear-gradient(to bottom, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+    ;
     color: #4d4d4d;
 }
 
@@ -20,9 +21,9 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 95px;
     font-weight: 100;
-    color: rgba(175, 47, 47, .15);
+    color: red;
     text-align: center;
 }
 
@@ -150,13 +151,13 @@ form>footer div {
 
 form>footer p {
     margin-left: 20px;
-    color: #d8d8d8;
+    color: red;
 }
 
 form>footer button {
     border: 0;
     background: transparent;
-    color: #d8d8d8;
+    color: black;
     font-weight: inherit;
     cursor: pointer;
     height: 26px;

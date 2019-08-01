@@ -41,7 +41,7 @@ export default props => {
         <MaterialIcon onClick={markAll} icon="keyboard_arrow_down" />
         <input
           type="text"
-          placeholder="What needs to be done?"
+          placeholder="What do you want?"
           value={todo}
           onChange={e => setTodo(e.target.value)}
         />
